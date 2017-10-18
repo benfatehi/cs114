@@ -1,0 +1,16 @@
+print("Welcome to the world of magic and wonder.")
+print("You now have the opportunity to choose what you want to be.")
+name=input("What is your name?")
+print("Knight, Mage, or Ninja?")
+character=input("What character type would you like to be?")
+print("Please enter the amount of magic and attack points that add up to 100.")
+print("How many attack points would you like")
+attack=int(input())
+print("Your attack is " + str(attack))
+magic=(100-attack)
+if attack >100:
+    print("It cannot be over 100. \nHow many attack points would you like")
+    attack=int(input())
+else:
+    print("Your magic is " + str(magic))
+    print("Alright " + str(name) + (", you have chosen ") + str(character) + (" with an attack amount of ") + str(attack) + (" and a magic amount of ") + str(magic) + ("."))
